@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(
+    to left bottom,
+    #40128b,
+    #39107a,
+    #310f6a,
+    #2a0d5a,
+    #230b4a
+  );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Poppins';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  color: #fff;
+}
+body header img {
+  width: 13rem;
+  margin-bottom: 20px;
+}
+
+main.container {
+  background-color: rgba(147, 54, 180, 0.4);
+  padding: 20px 40px;
+  border-radius: 5px;
+}
+
+main h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+main form p.text {
+  margin-top: 30px;
+}
+main form p a {
+  text-decoration: none;
+  color: #ffe79b;
+}
+main form button.btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  background: #dd58d6;
+  padding: 15px;
+  font-family: inherit;
+  font-size: 16px;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  -webkit-box-shadow: -1px 4px 51px 4px rgba(221, 88, 214, 1);
+  -moz-box-shadow: -1px 4px 51px 4px rgba(221, 88, 214, 1);
+  box-shadow: -1px 4px 51px 4px rgba(221, 88, 214, 1);
+}
+main form button.btn:focus {
+  outline: 0;
+}
+main form button.btn:active {
+  transform: scale(0.98);
+}
+
+main form article.form-control {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 300px;
+}
+main form article input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #fff solid;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #fff;
+}
+main form article input:focus,
+main form article input:valid {
+  outline: 0;
+  border-bottom-color: #dd58d6;
+}
+
+main form article label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+main form article label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+main form article input:focus + label span,
+main form article input:valid + label span {
+  color: #dd58d6;
+  transform: translateY(-30px);
+}
+
+@media screen and (max-width: 375px) {
+  main.container {
+    background-color: rgba(147, 54, 180, 0.4);
+    padding: 5px 15px;
+    border-radius: 5px;
+  }
+  main form article.form-control {
+    width: 275px;
+  }
+}
